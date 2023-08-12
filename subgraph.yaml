@@ -1,19 +1,17 @@
-specVersion: 0.0.4
+specVersion: 0.0.5
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: EntryPoint
-    network: goerli
+    network: fuse
     source:
-      address: "0x0576a174d229e3cfa37253523e645a78a0c91b57"
+      address: "0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789"
       abi: EntryPoint
-      # startBlock: 16729165
-      startBlock: 8492610
-
+      startBlock: 23791500
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - AccountDeployed
